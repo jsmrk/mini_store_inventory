@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mini_store_inventory/screen/bottom_navbar.dart';
+import 'package:mini_store_inventory/widgets/custom_navbar.dart';
 import 'package:mini_store_inventory/screen/dashboard.dart';
 
 void main() {
