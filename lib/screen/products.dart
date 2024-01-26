@@ -11,6 +11,5 @@ class Products extends StatelessWidget {
       appBar: CustomAppBar(),
       backgroundColor: Colors.yellow,
     );
-    ;
   }
 }

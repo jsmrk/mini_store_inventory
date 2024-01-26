@@ -27,10 +27,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: GNav(
         backgroundColor: const Color(0xFFF2F2F2),
         gap: 7,
-        activeColor: const Color(0xFF9E8EFF),
+        activeColor: const Color(0xFF33186B),
         textStyle: const TextStyle(
           fontSize: 17,
-          color: Color(0xFF9E8EFF),
+          color: Color(0xFF33186B),
           fontWeight: FontWeight.w700,
         ),
         iconSize: 31,

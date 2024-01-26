@@ -15,7 +15,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           padding: EdgeInsets.all(11),
           child: Icon(
             Icons.person_2_outlined,
-            size: 29,
+            size: 33,
           ),
         ),
       ),
@@ -26,7 +26,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: EdgeInsets.all(11),
             child: Icon(
               Icons.logout,
-              size: 26,
+              size: 29,
               color: Colors.black,
             ),
           ),
@@ -40,7 +40,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           Center(
               child: Text(
             'Sari-Sari Store',
-            style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 37, fontWeight: FontWeight.bold),
           )),
         ],
       ),
