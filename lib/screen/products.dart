@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mini_store_inventory/widgets/custom_button.dart';
+import 'package:mini_store_inventory/widgets/custom_dropdown.dart';
 import 'package:mini_store_inventory/widgets/searchbox.dart';
 
 import '../widgets/custom_appbar.dart';
@@ -14,7 +16,17 @@ class Products extends StatelessWidget {
           children: [
             SearchBox(),
             Row(
-              children: [],
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SizedBox(
+                  width: 25,
+                ),
+                CustomDropdown(),
+                CustomButton(),
+                SizedBox(
+                  width: 25,
+                ),
+              ],
             )
           ],
         ));

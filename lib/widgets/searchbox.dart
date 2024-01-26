@@ -6,7 +6,7 @@ class SearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(23),
+      padding: const EdgeInsets.only(top: 23, left: 23, right: 23, bottom: 5),
       child: TextField(
         // controller: nicknameController,
         expands: false,
