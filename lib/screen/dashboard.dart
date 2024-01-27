@@ -12,6 +12,9 @@ class Dashboard extends StatelessWidget {
         appBar: const CustomAppBar(),
         body: Column(
           children: [
+            SizedBox(
+              height: 25,
+            ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -26,6 +29,9 @@ class Dashboard extends StatelessWidget {
                   text: ' Sold',
                 )
               ],
+            ),
+            SizedBox(
+              height: 21,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

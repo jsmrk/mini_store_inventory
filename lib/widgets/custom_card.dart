@@ -14,23 +14,22 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(top: 21),
       padding: const EdgeInsets.all(17),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: const BorderRadius.all(
-          Radius.circular(25),
+          Radius.circular(15),
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.5),
-            offset: const Offset(0, 5),
+            color: Colors.grey.withOpacity(0.3),
+            offset: const Offset(0, 0),
             blurRadius: 5,
             spreadRadius: 1,
           ),
         ],
       ),
-      width: 165,
+      width: 155,
       height: 105,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
