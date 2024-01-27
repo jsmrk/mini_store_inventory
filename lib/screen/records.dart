@@ -32,14 +32,14 @@ class Records extends StatelessWidget {
                 Text(
                   'Sales',
                   style: TextStyle(
-                    fontSize: 21,
+                    fontSize: 19,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Text(
                   'Stocks',
                   style: TextStyle(
-                    fontSize: 21,
+                    fontSize: 19,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
