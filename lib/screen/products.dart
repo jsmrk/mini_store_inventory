@@ -10,12 +10,12 @@ class Products extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         appBar: CustomAppBar(),
         body: Column(
           children: [
-            SearchBox(),
-            Row(
+            const SearchBox(),
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 SizedBox(
@@ -27,7 +27,47 @@ class Products extends StatelessWidget {
                   width: 25,
                 ),
               ],
-            )
+            ),
+            Container(
+              margin: EdgeInsets.all(15),
+              padding: EdgeInsets.all(9),
+              height: 55,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(50),
+                    child: Image.asset(
+                      'assets/images/surf_powder.png',
+                      height: 55,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  const Text(
+                    'Surf Powder S',
+                    style: TextStyle(
+                      fontSize: 21,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const Text(
+                    '7',
+                    style: TextStyle(fontSize: 21),
+                  ),
+                  const Text(
+                    "₱${123}",
+                    style: TextStyle(
+                      fontSize: 21,
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ));
   }
