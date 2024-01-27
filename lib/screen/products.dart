@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_store_inventory/widgets/custom_button.dart';
 import 'package:mini_store_inventory/widgets/custom_dropdown.dart';
+import 'package:mini_store_inventory/widgets/product_container.dart';
 import 'package:mini_store_inventory/widgets/searchbox.dart';
 
 import '../widgets/custom_appbar.dart';
@@ -11,7 +12,7 @@ class Products extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: CustomAppBar(),
+        appBar: const CustomAppBar(),
         body: Column(
           children: [
             const SearchBox(),
@@ -29,45 +30,19 @@ class Products extends StatelessWidget {
               ],
             ),
             Container(
-              margin: EdgeInsets.all(15),
-              padding: EdgeInsets.all(9),
-              height: 55,
-              width: double.infinity,
+              margin: const EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(15),
               ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+              height: 475,
+              width: double.infinity,
+              child: const Column(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(50),
-                    child: Image.asset(
-                      'assets/images/surf_powder.png',
-                      height: 55,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  const Text(
-                    'Surf Powder S',
-                    style: TextStyle(
-                      fontSize: 21,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  const Text(
-                    '7',
-                    style: TextStyle(fontSize: 21),
-                  ),
-                  const Text(
-                    "₱${123}",
-                    style: TextStyle(
-                      fontSize: 21,
-                    ),
-                  )
+                  ProductContainer(),
                 ],
               ),
-            ),
+            )
           ],
         ));
   }
